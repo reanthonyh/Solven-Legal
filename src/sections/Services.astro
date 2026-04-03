@@ -1,0 +1,46 @@
+---
+import Card from "@/components/Card.astro";
+
+const services = [
+  {
+    title: "Recuperación de deudas",
+    description: "Recuperamos tu dinero con estrategias legales efectivas",
+  },
+  {
+    title: "Gestión de cobranza",
+    description: "Administramos tus carteras de clientes con profesionalismo.",
+  },
+  {
+    title: "Derecho civil",
+    description: "Representación en conflictos civiles y comerciales.",
+  },
+  {
+    title: "Litigios",
+    description: "Defensa integral en procedimientos legales.",
+  },
+];
+---
+
+<section id="services" class="p-4 md:p-6 lg:p-10 bg-background">
+  <div class="max-w-7xl mx-auto">
+    <h2
+      class="text-3xl md:text-4xl font-bold text-primary text-center font-lora mb-10"
+    >
+      Nuestros servicios
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      {
+        services.map((service) => (
+          <Card hoverable>
+            <h4 class="text-primary text-xl font-semibold text-center font-lora mb-3">
+              {service.title}
+            </h4>
+            <p class="text-foreground/70 text-base font-inter text-center leading-relaxed">
+              {service.description}
+            </p>
+          </Card>
+        ))
+      }
+    </div>
+  </div>
+</section>

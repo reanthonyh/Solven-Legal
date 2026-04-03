@@ -1,0 +1,20 @@
+@import "@fontsource-variable/inter/wght.css";
+@import "@fontsource-variable/lora/wght.css";
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0b1f3b;
+  --color-secondary: #25d366;
+  --color-background: #f5f5f5;
+  --color-surface: #ffffff;
+  --color-foreground: #0b1f3b;
+
+  --font-inter: "Inter Variable", sans-serif;
+  --font-lora: "Lora Variable", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-lora;
+  }
+}

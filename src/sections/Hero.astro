@@ -1,0 +1,59 @@
+---
+import heroBackground from "@/assets/hero_bg.png";
+
+const phone = "51917309693";
+---
+
+<section
+  id="hero"
+  class="relative min-h-screen flex items-center justify-center overflow-hidden"
+>
+  <div class="absolute inset-0 z-0">
+    <img src={heroBackground.src} alt="" class="w-full h-full object-cover" />
+    <div class="absolute inset-0 bg-primary/60"></div>
+  </div>
+
+  <div class="relative z-10 max-w-5xl mx-auto px-6 text-center">
+    <h1
+      class="text-white text-4xl md:text-5xl lg:text-6xl font-bold font-inter leading-tight mb-6"
+    >
+      Recuperamos tus deudas y protegemos tus intereses legales
+    </h1>
+    <p
+      class="text-white/80 text-lg md:text-xl font-inter max-w-2xl mx-auto mb-10"
+    >
+      Soluciones legales rápidas y efectivas para personas y empresas. Contamos
+      con 5 años de experiencia.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="#contacto"
+        class="bg-secondary hover:bg-secondary/90 text-foreground px-8 py-4 rounded-lg font-semibold text-base transition-colors"
+      >
+        Solicitar asesoría
+      </a>
+      <a
+        href=`https://wa.me/${phone}`
+        target="_blank"
+        class="border border-white/30 bg-black/20 hover:bg-black/60 hover:border-white/50 text-white px-8 py-4 rounded-lg font-medium text-base transition-colors"
+      >
+        Hablar por WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+    <svg
+      class="w-6 h-6 text-white/60"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+    </svg>
+  </div>
+</section>
