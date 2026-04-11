@@ -1,0 +1,22 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Footer from "@/sections/Footer.astro";
+import Header from "@/sections/Header.astro";
+import Services from "@/sections/Services.astro";
+---
+
+<Layout title="Servicios - Solven Legal"></Layout>
+  <main>
+    <Header />
+    <section class="pt-32 pb-20 bg-background">
+      <div class="max-w-7xl mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-bold text-primary font-lora mb-4">Nuestros Servicios</h1>
+        <p class="text-lg text-foreground/70 max-w-2xl mb-12">
+          Ofrecemos soluciones legales integrales adaptadas a las necesidades de tu empresa.
+        </p>
+      </div>
+    </section>
+    <Services />
+    <Footer />
+  </main>
+</Layout>

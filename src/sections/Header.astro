@@ -1,9 +1,9 @@
 ---
 const navLinks = [
   { label: "Inicio", href: "/" },
-  { label: "Servicios", href: "#services" },
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Contacto", href: "#contacto" },
+  { label: "Servicios", href: "/servicios" },
+  { label: "Nosotros", href: "/nosotros" },
+  { label: "Contacto", href: "/contacto" },
 ];
 ---
 
@@ -11,7 +11,9 @@ const navLinks = [
   <nav class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
     <a href="/" class="flex items-center gap-3">
       <img src="/favicon.svg" alt="Solven Legal" class="w-10 h-10" />
-      <span class="text-white font-semibold text-lg font-lora">Solven Legal</span>
+      <span class="text-white font-semibold text-lg font-lora"
+        >Solven Legal</span
+      >
     </a>
 
     <ul class="hidden md:flex items-center gap-8">
@@ -30,7 +32,7 @@ const navLinks = [
     </ul>
 
     <a
-      href="#contacto"
+      href="/contacto"
       class="hidden md:inline-flex bg-secondary hover:bg-secondary/90 text-white px-5 py-2.5 rounded-lg text-sm font-medium transition-colors"
     >
       Consulta gratuita
@@ -41,27 +43,36 @@ const navLinks = [
       class="md:hidden text-white p-2"
       aria-label="Abrir menú"
     >
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      <svg
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
   </nav>
 </header>
 
-<div id="mobile-menu" class="hidden fixed inset-0 z-40 bg-primary/95 backdrop-blur-sm md:hidden">
+<div
+  id="mobile-menu"
+  class="hidden fixed inset-0 z-40 bg-primary/95 backdrop-blur-sm md:hidden"
+>
   <div class="flex flex-col items-center justify-center h-full gap-8">
     {
       navLinks.map((link) => (
-        <a
-          href={link.href}
-          class="text-white text-xl font-medium"
-        >
+        <a href={link.href} class="text-white text-xl font-medium">
           {link.label}
         </a>
       ))
     }
     <a
-      href="#contacto"
+      href="/contacto"
       class="bg-secondary text-white px-6 py-3 rounded-lg font-medium"
     >
       Consulta gratuita
