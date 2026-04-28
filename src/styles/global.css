@@ -1,6 +1,7 @@
 @import "@fontsource-variable/inter/wght.css";
 @import "@fontsource-variable/lora/wght.css";
 @import "tailwindcss";
+@import "@/styles/animations.css";
 
 @theme {
   --color-primary: #0b1f3b;
